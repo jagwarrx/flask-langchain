@@ -2,3 +2,5 @@ Flask
 Gunicorn
 generic
 llama-index
+pydantic
+typing
