@@ -30,7 +30,7 @@ class Resume(BaseModel):
 
 program = OpenAIPydanticProgram.from_defaults(
     output_cls=Resume,
-    llm=OpenAI(temperature=0, model="gpt-4-0613", api_key="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"),
+    llm=OpenAI(temperature=0, model="gpt-4-0613", api_key="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"),
     prompt_template_str=(
         "Please extract the following spanish resume text into a structured data:"
         " {input_str}. The column names are the following: ['Name', 'Email',"
