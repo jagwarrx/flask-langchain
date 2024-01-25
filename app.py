@@ -72,6 +72,5 @@ Inglés - Fluido
 @app.get('/')
 def hello_world():
     output = program(input_str=text2)
-    print("Hello")
-    print(output)
+    return output
   
