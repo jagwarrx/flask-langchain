@@ -12,5 +12,5 @@ app = Flask(__name__)
 
 @app.get('/')
 def hello_world():
-    console.log("hello world"
+    print("hello world"
     return "hello world"
