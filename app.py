@@ -12,8 +12,6 @@ app = Flask(__name__)
 
 @app.get('/')
 def hello_world():
-    elements = partition_pdf("../Shyam_Resume.pdf")
-    console.log(elements)
     program = OpenAIPydanticProgram.from_defaults(
     llm=OpenAI(temperature=0, model="gpt-4-0613", api_key="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"),
     prompt_template_str=(
@@ -24,4 +22,4 @@ def hello_world():
     ),
     verbose=True,
 )
-    return elements
+    return "hello world"
