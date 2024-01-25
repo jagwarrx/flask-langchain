@@ -6,6 +6,8 @@ from llama_index.program import (
     DataFrameRowsOnly,
 )
 from llama_index.llms import OpenAI
+from pydantic import BaseModel
+from typing import List
 
 
 app = Flask(__name__)
